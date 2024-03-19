@@ -13,7 +13,8 @@
 		C02744742B9AE931000CF7C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02744732B9AE931000CF7C8 /* Preview Assets.xcassets */; };
 		C027447F2B9AF181000CF7C8 /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */; };
 		C02744812B9AF199000CF7C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744802B9AF199000CF7C8 /* LocationManager.swift */; };
-		C02744832B9AF1B5000CF7C8 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744822B9AF1B5000CF7C8 /* Weather.swift */; };
+		C02744832B9AF1B5000CF7C8 /* Weathers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744822B9AF1B5000CF7C8 /* Weathers.swift */; };
+		C02744D42BA948BE000CF7C8 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D32BA948BE000CF7C8 /* OnBoarding.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +26,8 @@
 		C027447A2B9AE9C5000CF7C8 /* PreparationForToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreparationForToday.entitlements; sourceTree = "<group>"; };
 		C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
 		C02744802B9AF199000CF7C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		C02744822B9AF1B5000CF7C8 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		C02744822B9AF1B5000CF7C8 /* Weathers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weathers.swift; sourceTree = "<group>"; };
+		C02744D32BA948BE000CF7C8 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +99,8 @@
 		C027447D2B9AF16F000CF7C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C02744822B9AF1B5000CF7C8 /* Weather.swift */,
+				C02744822B9AF1B5000CF7C8 /* Weathers.swift */,
+				C02744D32BA948BE000CF7C8 /* OnBoarding.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,7 +179,8 @@
 				C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */,
 				C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */,
 				C027447F2B9AF181000CF7C8 /* WeatherKitManager.swift in Sources */,
-				C02744832B9AF1B5000CF7C8 /* Weather.swift in Sources */,
+				C02744D42BA948BE000CF7C8 /* OnBoarding.swift in Sources */,
+				C02744832B9AF1B5000CF7C8 /* Weathers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +318,7 @@
 				DEVELOPMENT_TEAM = JY747KU2DH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To ger weather for your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -344,6 +349,7 @@
 				DEVELOPMENT_TEAM = JY747KU2DH;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To ger weather for your location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
