@@ -17,6 +17,7 @@
 		C02744D42BA948BE000CF7C8 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D32BA948BE000CF7C8 /* OnboardingModel.swift */; };
 		C02744D62BA949EE000CF7C8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */; };
 		C02744D82BA94F60000CF7C8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D72BA94F60000CF7C8 /* OnboardingView.swift */; };
+		C02744DA2BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D92BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		C02744D32BA948BE000CF7C8 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
 		C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		C02744D72BA94F60000CF7C8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		C02744D92BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				C027447E2B9AF181000CF7C8 /* WeatherKitViewModel.swift */,
+				C02744D92BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift */,
 				C02744802B9AF199000CF7C8 /* LocationViewModel.swift */,
 				C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */,
 			);
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02744812B9AF199000CF7C8 /* LocationViewModel.swift in Sources */,
+				C02744DA2BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift in Sources */,
 				C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */,
 				C02744D62BA949EE000CF7C8 /* OnboardingViewModel.swift in Sources */,
 				C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */,
