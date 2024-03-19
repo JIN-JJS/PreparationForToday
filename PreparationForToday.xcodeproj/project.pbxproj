@@ -19,6 +19,7 @@
 		C02744D82BA94F60000CF7C8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D72BA94F60000CF7C8 /* OnboardingView.swift */; };
 		C02744DA2BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D92BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift */; };
 		C02744DC2BA972EA000CF7C8 /* CharaterSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744DB2BA972EA000CF7C8 /* CharaterSelectionView.swift */; };
+		C02744DE2BA983C0000CF7C8 /* AcceptLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C02744D72BA94F60000CF7C8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		C02744D92BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSelectionViewModel.swift; sourceTree = "<group>"; };
 		C02744DB2BA972EA000CF7C8 /* CharaterSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharaterSelectionView.swift; sourceTree = "<group>"; };
+		C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcceptLocationServicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				C027446E2B9AE930000CF7C8 /* ContentView.swift */,
 				C02744DB2BA972EA000CF7C8 /* CharaterSelectionView.swift */,
+				C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */,
 				C02744D72BA94F60000CF7C8 /* OnboardingView.swift */,
 			);
 			path = View;
@@ -187,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C02744DE2BA983C0000CF7C8 /* AcceptLocationServicesView.swift in Sources */,
 				C02744812B9AF199000CF7C8 /* LocationViewModel.swift in Sources */,
 				C02744DA2BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift in Sources */,
 				C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */,
