@@ -15,6 +15,7 @@
 		C02744812B9AF199000CF7C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744802B9AF199000CF7C8 /* LocationManager.swift */; };
 		C02744832B9AF1B5000CF7C8 /* Weathers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744822B9AF1B5000CF7C8 /* Weathers.swift */; };
 		C02744D42BA948BE000CF7C8 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D32BA948BE000CF7C8 /* Onboarding.swift */; };
+		C02744D62BA949EE000CF7C8 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C02744802B9AF199000CF7C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C02744822B9AF1B5000CF7C8 /* Weathers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weathers.swift; sourceTree = "<group>"; };
 		C02744D32BA948BE000CF7C8 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
+		C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 			children = (
 				C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */,
 				C02744802B9AF199000CF7C8 /* LocationManager.swift */,
+				C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -177,6 +180,7 @@
 			files = (
 				C02744812B9AF199000CF7C8 /* LocationManager.swift in Sources */,
 				C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */,
+				C02744D62BA949EE000CF7C8 /* OnboardingManager.swift in Sources */,
 				C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */,
 				C027447F2B9AF181000CF7C8 /* WeatherKitManager.swift in Sources */,
 				C02744D42BA948BE000CF7C8 /* Onboarding.swift in Sources */,
