@@ -9,6 +9,6 @@ import Foundation
 
 // MARK : 날씨 정보들
 
-struct Weathers {
+struct WeatherModel {
     
 }

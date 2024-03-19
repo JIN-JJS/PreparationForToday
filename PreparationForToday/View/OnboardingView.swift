@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
     @Binding var isFirstLaunch: Bool
-    @StateObject var onboardingManager: OnboardingManager = .init()
+    @StateObject var onboardingViewModel: OnboardingViewModel = .init()
     
     var body: some View {
         VStack{
@@ -23,7 +23,7 @@ struct OnboardingView: View {
                    
                    VStack(spacing:30){
                        
-                       ForEach(onboardingManager.onboardingList){ index in
+                       ForEach(onboardingViewModel.OnboardingModelList){ index in
                            HStack{
                                Image(systemName: "\(index.systemName)")
                                    .resizable()

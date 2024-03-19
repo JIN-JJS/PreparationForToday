@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Onboarding: Identifiable, Hashable {
+struct OnboardingModel: Identifiable, Hashable {
     var id: Int
     var systemName: String = ""
     var title: String = ""

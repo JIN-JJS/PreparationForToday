@@ -8,7 +8,7 @@
 import Foundation
 import WeatherKit
 
-@MainActor class WeatherKitManager: ObservableObject {
+@MainActor class WeatherKitViewModel: ObservableObject {
     @Published var weather: Weather?
         
     func getWeather(latitude: Double, longitude: Double) {

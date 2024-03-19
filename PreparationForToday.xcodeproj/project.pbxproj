@@ -11,11 +11,11 @@
 		C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027446E2B9AE930000CF7C8 /* ContentView.swift */; };
 		C02744712B9AE931000CF7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02744702B9AE931000CF7C8 /* Assets.xcassets */; };
 		C02744742B9AE931000CF7C8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02744732B9AE931000CF7C8 /* Preview Assets.xcassets */; };
-		C027447F2B9AF181000CF7C8 /* WeatherKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */; };
-		C02744812B9AF199000CF7C8 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744802B9AF199000CF7C8 /* LocationManager.swift */; };
-		C02744832B9AF1B5000CF7C8 /* Weathers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744822B9AF1B5000CF7C8 /* Weathers.swift */; };
-		C02744D42BA948BE000CF7C8 /* Onboarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D32BA948BE000CF7C8 /* Onboarding.swift */; };
-		C02744D62BA949EE000CF7C8 /* OnboardingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */; };
+		C027447F2B9AF181000CF7C8 /* WeatherKitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027447E2B9AF181000CF7C8 /* WeatherKitViewModel.swift */; };
+		C02744812B9AF199000CF7C8 /* LocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744802B9AF199000CF7C8 /* LocationViewModel.swift */; };
+		C02744832B9AF1B5000CF7C8 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744822B9AF1B5000CF7C8 /* WeatherModel.swift */; };
+		C02744D42BA948BE000CF7C8 /* OnboardingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D32BA948BE000CF7C8 /* OnboardingModel.swift */; };
+		C02744D62BA949EE000CF7C8 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */; };
 		C02744D82BA94F60000CF7C8 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C02744D72BA94F60000CF7C8 /* OnboardingView.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,11 +26,11 @@
 		C02744702B9AE931000CF7C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C02744732B9AE931000CF7C8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C027447A2B9AE9C5000CF7C8 /* PreparationForToday.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PreparationForToday.entitlements; sourceTree = "<group>"; };
-		C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitManager.swift; sourceTree = "<group>"; };
-		C02744802B9AF199000CF7C8 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		C02744822B9AF1B5000CF7C8 /* Weathers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weathers.swift; sourceTree = "<group>"; };
-		C02744D32BA948BE000CF7C8 /* Onboarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Onboarding.swift; sourceTree = "<group>"; };
-		C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingManager.swift; sourceTree = "<group>"; };
+		C027447E2B9AF181000CF7C8 /* WeatherKitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherKitViewModel.swift; sourceTree = "<group>"; };
+		C02744802B9AF199000CF7C8 /* LocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewModel.swift; sourceTree = "<group>"; };
+		C02744822B9AF1B5000CF7C8 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		C02744D32BA948BE000CF7C8 /* OnboardingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingModel.swift; sourceTree = "<group>"; };
+		C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 		C02744D72BA94F60000CF7C8 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,9 +95,9 @@
 		C027447C2B9AF160000CF7C8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				C027447E2B9AF181000CF7C8 /* WeatherKitManager.swift */,
-				C02744802B9AF199000CF7C8 /* LocationManager.swift */,
-				C02744D52BA949EE000CF7C8 /* OnboardingManager.swift */,
+				C027447E2B9AF181000CF7C8 /* WeatherKitViewModel.swift */,
+				C02744802B9AF199000CF7C8 /* LocationViewModel.swift */,
+				C02744D52BA949EE000CF7C8 /* OnboardingViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 		C027447D2B9AF16F000CF7C8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C02744822B9AF1B5000CF7C8 /* Weathers.swift */,
-				C02744D32BA948BE000CF7C8 /* Onboarding.swift */,
+				C02744822B9AF1B5000CF7C8 /* WeatherModel.swift */,
+				C02744D32BA948BE000CF7C8 /* OnboardingModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -181,14 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C02744812B9AF199000CF7C8 /* LocationManager.swift in Sources */,
+				C02744812B9AF199000CF7C8 /* LocationViewModel.swift in Sources */,
 				C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */,
-				C02744D62BA949EE000CF7C8 /* OnboardingManager.swift in Sources */,
+				C02744D62BA949EE000CF7C8 /* OnboardingViewModel.swift in Sources */,
 				C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */,
-				C027447F2B9AF181000CF7C8 /* WeatherKitManager.swift in Sources */,
+				C027447F2B9AF181000CF7C8 /* WeatherKitViewModel.swift in Sources */,
 				C02744D82BA94F60000CF7C8 /* OnboardingView.swift in Sources */,
-				C02744D42BA948BE000CF7C8 /* Onboarding.swift in Sources */,
-				C02744832B9AF1B5000CF7C8 /* Weathers.swift in Sources */,
+				C02744D42BA948BE000CF7C8 /* OnboardingModel.swift in Sources */,
+				C02744832B9AF1B5000CF7C8 /* WeatherModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
