@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @AppStorage("isFirstLaunch") var isFirstLaunch: Bool = true
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            Text("메인뷰")
         }
-        .padding()
+        .fullScreenCover(isPresented: $isFirstLaunch) {
+            OnboardingView(isFirstLaunch: $isFirstLaunch)
+        }
     }
 }
 
