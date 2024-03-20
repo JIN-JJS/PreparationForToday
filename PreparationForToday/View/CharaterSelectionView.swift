@@ -19,7 +19,7 @@ struct CharaterSelectionView: View {
         VStack {
             
             VStack {
-                Text("Gender")
+                Text("성별")
                     .multilineTextAlignment(.center)
                     .font(.largeTitle)
                     .fontWeight(.bold)
