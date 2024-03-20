@@ -5,59 +5,60 @@
 //  Created by 전준수 on 3/8/24.
 //
 
-import Foundation
 import CoreLocation
 
-class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
-    
-    var locationManager = CLLocationManager()
-    @Published var authorisationStatus: CLAuthorizationStatus?
+class LocationViewModel: NSObject, ObservableObject {
+    private let manager = CLLocationManager()
+    @Published var userLocation: CLLocation?
+    static let shared = LocationViewModel()
     
     var latitude: Double {
-        locationManager.location?.coordinate.latitude ?? 37.596970
+        manager.location?.coordinate.latitude ?? 37.596970
     }
     
     var longitude: Double {
-        locationManager.location?.coordinate.longitude ?? -127.036119
+        manager.location?.coordinate.longitude ?? -127.036119
     }
+    
     
     override init() {
         super.init()
-        locationManager.delegate = self
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.startUpdatingLocation()
     }
     
-    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus {
-        case .authorizedWhenInUse:
-            // location services available
-            authorisationStatus = .authorizedWhenInUse
-            locationManager.requestLocation()
-            break
-            
-        case .restricted:
-            authorisationStatus = .restricted
-            break
-            
-        case .denied:
-            authorisationStatus = .denied
-            break
+    func requestLocation() {
+        manager.requestWhenInUseAuthorization()
+    }
+    
+}
+
+extension LocationViewModel: CLLocationManagerDelegate {
+    
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        
+        switch status {
             
         case .notDetermined:
-            authorisationStatus = .notDetermined
-            manager.requestWhenInUseAuthorization()
-            break
-            
-        default:
+            print("DEBUG: Not determined")
+        case .restricted:
+            print("DEBUG: Not Restricted")
+        case .denied:
+            print("DEBUG: Not Denied")
+        case . authorizedAlways:
+            print("DEBUG: Not AuthorizedAlways")
+        case .authorizedWhenInUse:
+            print("DEBUG: Not Auth when in use")
+        @unknown default:
             break
         }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("\(error.localizedDescription)")
+        guard let location = locations.last else { return }
+        self.userLocation = location
     }
     
 }

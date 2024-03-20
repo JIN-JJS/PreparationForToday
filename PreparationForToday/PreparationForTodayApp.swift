@@ -11,7 +11,7 @@ import SwiftUI
 struct PreparationForTodayApp: App {
     var body: some Scene {
         WindowGroup {
-            AcceptLocationServicesView()
+            ContentView()
         }
     }
 }

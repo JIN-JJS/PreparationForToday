@@ -11,6 +11,8 @@ struct ContentView: View {
     
     @AppStorage("isFirstLaunch") var isFirstLaunch: Bool = true
     @StateObject var characterSelectionViewModel = CharacterSelectionViewModel()
+    @ObservedObject var weatherKitViewModel = WeatherKitViewModel()
+    @ObservedObject var locationViewModel = LocationViewModel.shared
     
     var body: some View {
         
@@ -20,8 +22,16 @@ struct ContentView: View {
                     OnboardingView(isFirstLaunch: $isFirstLaunch)
                 }
         } else {
-            VStack {
-                Text("메인뷰")
+            if locationViewModel.userLocation == nil {
+                AcceptLocationServicesView()
+                
+            } else if locationViewModel.userLocation != nil {
+                VStack {
+                    Label(weatherKitViewModel.temp, systemImage: weatherKitViewModel.symbol)
+                }
+                .task {
+                    weatherKitViewModel.getWeather(latitude: locationViewModel.latitude, longitude: locationViewModel.longitude)
+                }
             }
            
         }

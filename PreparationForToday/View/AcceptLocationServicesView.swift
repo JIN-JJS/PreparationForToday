@@ -9,7 +9,6 @@ import SwiftUI
 
 struct AcceptLocationServicesView: View {
     @ObservedObject var weatherKitViewModel = WeatherKitViewModel()
-    @StateObject var locationViewModel = LocationViewModel()
     
     var body: some View {
         VStack {
@@ -55,7 +54,7 @@ struct AcceptLocationServicesView: View {
                 HStack {
                     
                     Button{
-                        
+                        LocationViewModel.shared.requestLocation()
                     } label: {
                         Text("확인")
                             .fontWeight(.bold)
