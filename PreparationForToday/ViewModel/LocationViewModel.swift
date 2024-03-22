@@ -34,7 +34,7 @@ class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     }
     
     func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
-        switch manager.authorizationStatus {
+        switch locationManager.authorizationStatus {
         case .notDetermined:
             // 위치 사용 권한 대기 상태
             authorisationStatus = .notDetermined
