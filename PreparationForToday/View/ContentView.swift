@@ -11,7 +11,6 @@ struct ContentView: View {
     
     @AppStorage("isFirstLaunch") var isFirstLaunch: Bool = true
     @StateObject var characterSelectionViewModel = CharacterSelectionViewModel()
-    @ObservedObject var weatherKitViewModel = WeatherKitViewModel()
     @ObservedObject var locationViewModel = LocationViewModel.shared
     
     var body: some View {
@@ -36,12 +35,7 @@ struct ContentView: View {
                 DeniedLocationServicesView()
             } else if locationViewModel.authorisationStatus == .authorizedAlways || locationViewModel.authorisationStatus == .authorizedWhenInUse {
                 // MARK: 4. 메인뷰
-                VStack {
-                    Label(weatherKitViewModel.temp, systemImage: weatherKitViewModel.symbol)
-                }
-                .task {
-                    weatherKitViewModel.getWeather(latitude: locationViewModel.latitude, longitude: locationViewModel.longitude)
-                }
+                MainView()
             }
         }
     }

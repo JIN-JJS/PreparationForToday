@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct WeatherServicesView: View {
+    @ObservedObject var weatherKitViewModel = WeatherKitViewModel()
+    @ObservedObject var locationViewModel = LocationViewModel.shared
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Label(weatherKitViewModel.temp, systemImage: weatherKitViewModel.symbol)
+        }
+        .task {
+            weatherKitViewModel.getWeather(latitude: locationViewModel.latitude, longitude: locationViewModel.longitude)
+        }
     }
 }
 
