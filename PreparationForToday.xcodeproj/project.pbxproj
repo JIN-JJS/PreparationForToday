@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		C00133952BADB126001E05DE /* DeniedLocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00133942BADB126001E05DE /* DeniedLocationServicesView.swift */; };
 		C00133972BADC2AF001E05DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00133962BADC2AF001E05DE /* MainView.swift */; };
+		C00133992BADC2D0001E05DE /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00133982BADC2D0001E05DE /* LocationServicesView.swift */; };
 		C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027446C2B9AE930000CF7C8 /* PreparationForTodayApp.swift */; };
 		C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027446E2B9AE930000CF7C8 /* ContentView.swift */; };
 		C02744712B9AE931000CF7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02744702B9AE931000CF7C8 /* Assets.xcassets */; };
@@ -27,6 +28,7 @@
 /* Begin PBXFileReference section */
 		C00133942BADB126001E05DE /* DeniedLocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeniedLocationServicesView.swift; sourceTree = "<group>"; };
 		C00133962BADC2AF001E05DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		C00133982BADC2D0001E05DE /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		C02744692B9AE930000CF7C8 /* PreparationForToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreparationForToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C027446C2B9AE930000CF7C8 /* PreparationForTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationForTodayApp.swift; sourceTree = "<group>"; };
 		C027446E2B9AE930000CF7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */,
 				C00133942BADB126001E05DE /* DeniedLocationServicesView.swift */,
 				C00133962BADC2AF001E05DE /* MainView.swift */,
+				C00133982BADC2D0001E05DE /* LocationServicesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */,
 				C027447F2B9AF181000CF7C8 /* WeatherKitViewModel.swift in Sources */,
 				C02744D82BA94F60000CF7C8 /* OnboardingView.swift in Sources */,
+				C00133992BADC2D0001E05DE /* LocationServicesView.swift in Sources */,
 				C02744D42BA948BE000CF7C8 /* OnboardingModel.swift in Sources */,
 				C02744832B9AF1B5000CF7C8 /* WeatherModel.swift in Sources */,
 			);
