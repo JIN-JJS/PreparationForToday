@@ -7,58 +7,70 @@
 
 import CoreLocation
 
-class LocationViewModel: NSObject, ObservableObject {
-    private let manager = CLLocationManager()
+class LocationViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
+    
+    private let locationManager = CLLocationManager()
+    @Published var authorisationStatus: CLAuthorizationStatus?
     @Published var userLocation: CLLocation?
     static let shared = LocationViewModel()
     
     var latitude: Double {
-        manager.location?.coordinate.latitude ?? 37.596970
+        locationManager.location?.coordinate.latitude ?? 37.596970
     }
     
     var longitude: Double {
-        manager.location?.coordinate.longitude ?? -127.036119
+        locationManager.location?.coordinate.longitude ?? -127.036119
     }
-    
     
     override init() {
         super.init()
-        manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.startUpdatingLocation()
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.startUpdatingLocation()
     }
     
     func requestLocation() {
-        manager.requestWhenInUseAuthorization()
+        locationManager.requestWhenInUseAuthorization()
     }
     
-}
-
-extension LocationViewModel: CLLocationManagerDelegate {
-    
-    
-    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        
-        switch status {
-            
+    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
+        switch manager.authorizationStatus {
         case .notDetermined:
+            // 위치 사용 권한 대기 상태
+            authorisationStatus = .notDetermined
             print("DEBUG: Not determined")
+            break
+            
         case .restricted:
+            // 위치 사용 권한 대기 상태
+            authorisationStatus = .restricted
             print("DEBUG: Not Restricted")
+            break
+            
         case .denied:
+            // 위치 사용 권한 거부 되어 있음
+            authorisationStatus = .denied
             print("DEBUG: Not Denied")
-        case . authorizedAlways:
+            break
+            
+        case .authorizedAlways:
+            // 위치 사용 권한 항상 허용 되어 있음
+            authorisationStatus = .authorizedAlways
             print("DEBUG: Not AuthorizedAlways")
+            
         case .authorizedWhenInUse:
+            // 위치 사용 권한 앱 사용 시 허용 되어 있음
+            authorisationStatus = .authorizedWhenInUse
             print("DEBUG: Not Auth when in use")
-        @unknown default:
+            break
+            
+        default:
             break
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        guard let location = locations.last else { return }
-        self.userLocation = location
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("\(error.localizedDescription)")
     }
     
 }
