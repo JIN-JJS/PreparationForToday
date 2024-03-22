@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct AcceptLocationServicesView: View {
-    @ObservedObject var weatherKitViewModel = WeatherKitViewModel()
     
     var body: some View {
         VStack {
