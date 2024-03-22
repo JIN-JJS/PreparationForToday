@@ -11,6 +11,7 @@
 		C00133972BADC2AF001E05DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00133962BADC2AF001E05DE /* MainView.swift */; };
 		C00133992BADC2D0001E05DE /* LocationServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C00133982BADC2D0001E05DE /* LocationServicesView.swift */; };
 		C001339B2BADC2EE001E05DE /* WeatherServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001339A2BADC2EE001E05DE /* WeatherServicesView.swift */; };
+		C001339D2BADC314001E05DE /* SettingServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C001339C2BADC314001E05DE /* SettingServicesView.swift */; };
 		C027446D2B9AE930000CF7C8 /* PreparationForTodayApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027446C2B9AE930000CF7C8 /* PreparationForTodayApp.swift */; };
 		C027446F2B9AE930000CF7C8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C027446E2B9AE930000CF7C8 /* ContentView.swift */; };
 		C02744712B9AE931000CF7C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C02744702B9AE931000CF7C8 /* Assets.xcassets */; };
@@ -31,6 +32,7 @@
 		C00133962BADC2AF001E05DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		C00133982BADC2D0001E05DE /* LocationServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationServicesView.swift; sourceTree = "<group>"; };
 		C001339A2BADC2EE001E05DE /* WeatherServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServicesView.swift; sourceTree = "<group>"; };
+		C001339C2BADC314001E05DE /* SettingServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingServicesView.swift; sourceTree = "<group>"; };
 		C02744692B9AE930000CF7C8 /* PreparationForToday.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PreparationForToday.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C027446C2B9AE930000CF7C8 /* PreparationForTodayApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreparationForTodayApp.swift; sourceTree = "<group>"; };
 		C027446E2B9AE930000CF7C8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				C00133962BADC2AF001E05DE /* MainView.swift */,
 				C00133982BADC2D0001E05DE /* LocationServicesView.swift */,
 				C001339A2BADC2EE001E05DE /* WeatherServicesView.swift */,
+				C001339C2BADC314001E05DE /* SettingServicesView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C02744DE2BA983C0000CF7C8 /* AcceptLocationServicesView.swift in Sources */,
+				C001339D2BADC314001E05DE /* SettingServicesView.swift in Sources */,
 				C00133972BADC2AF001E05DE /* MainView.swift in Sources */,
 				C02744812B9AF199000CF7C8 /* LocationViewModel.swift in Sources */,
 				C02744DA2BA95BF9000CF7C8 /* CharacterSelectionViewModel.swift in Sources */,
