@@ -61,6 +61,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C001339E2BADC71B001E05DE /*  Initialsettings */ = {
+			isa = PBXGroup;
+			children = (
+				C02744D72BA94F60000CF7C8 /* OnboardingView.swift */,
+				C02744DB2BA972EA000CF7C8 /* CharaterSelectionView.swift */,
+				C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */,
+				C00133942BADB126001E05DE /* DeniedLocationServicesView.swift */,
+			);
+			path = " Initialsettings";
+			sourceTree = "<group>";
+		};
+		C001339F2BADC787001E05DE /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				C00133982BADC2D0001E05DE /* LocationServicesView.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		C00133A02BADC796001E05DE /* Weather */ = {
+			isa = PBXGroup;
+			children = (
+				C001339A2BADC2EE001E05DE /* WeatherServicesView.swift */,
+			);
+			path = Weather;
+			sourceTree = "<group>";
+		};
+		C00133A12BADC79E001E05DE /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				C001339C2BADC314001E05DE /* SettingServicesView.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 		C02744602B9AE930000CF7C8 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +138,11 @@
 			isa = PBXGroup;
 			children = (
 				C027446E2B9AE930000CF7C8 /* ContentView.swift */,
-				C02744D72BA94F60000CF7C8 /* OnboardingView.swift */,
-				C02744DB2BA972EA000CF7C8 /* CharaterSelectionView.swift */,
-				C02744DD2BA983C0000CF7C8 /* AcceptLocationServicesView.swift */,
-				C00133942BADB126001E05DE /* DeniedLocationServicesView.swift */,
 				C00133962BADC2AF001E05DE /* MainView.swift */,
-				C00133982BADC2D0001E05DE /* LocationServicesView.swift */,
-				C001339A2BADC2EE001E05DE /* WeatherServicesView.swift */,
-				C001339C2BADC314001E05DE /* SettingServicesView.swift */,
+				C001339E2BADC71B001E05DE /*  Initialsettings */,
+				C001339F2BADC787001E05DE /* Location */,
+				C00133A02BADC796001E05DE /* Weather */,
+				C00133A12BADC79E001E05DE /* Setting */,
 			);
 			path = View;
 			sourceTree = "<group>";
